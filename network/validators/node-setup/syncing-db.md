@@ -69,6 +69,12 @@ rclone -P sync release:pub.harmony.one/testnet.min/harmony_db_<ShardID> harmony_
 {% endtab %}
 {% endtabs %}
 
+If you receive the error:
+```
+--config=/home/harmony/.config/rclone/rclone.conf
+```
+Add the option `--config=/home/harmony/.config/rclone/rclone.conf` to the command.
+
 {% hint style="info" %}
 Nodes in shard 0 just need to sync `harmony_db_0`
 
